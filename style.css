@@ -3,8 +3,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     min-height: 100vh;
     background-color: #f0f0f0; 
+=======
+    height: 100vh;
+    margin: 0;
+    background-color: #ffcc99; 
+>>>>>>> aaa756de68b735dc546c6ff9a5e25db7f8610c89
 }
 
 #game-container {
@@ -23,10 +29,17 @@ body {
 #play-page {
     background-color: #fff; }
 
+<<<<<<< HEAD
 #choices img {
     width: 150px;
     height: 150px;
     margin: 10px;
+=======
+.choices img {
+    width: 100px;   
+    height: 100px;  
+    margin: 0 15px;
+>>>>>>> aaa756de68b735dc546c6ff9a5e25db7f8610c89
     cursor: pointer;
 }
 
