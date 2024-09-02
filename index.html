@@ -7,21 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Rock Paper Scissors</h1>
-        <div class="game">
-            <div class="choices">
+    <div id="game-container">
+        <div id="rule-page">
+            <h1>Rock Paper Scissors</h1>
+            <p>The rules are simple:</p>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <div id="play-page" style="display: none;">
+            <div id="choices">
                 <img src="images/rock.png" id="rock" alt="Rock">
                 <img src="images/paper.png" id="paper" alt="Paper">
                 <img src="images/scissors.png" id="scissors" alt="Scissors">
             </div>
-            <div class="result">
-                <p id="user-choice">Your choice: </p>
-                <p id="computer-choice">Computer's choice: </p>
-                <p id="outcome"></p>
+            <div id="results">
             </div>
         </div>
+
+        <div id="score-page" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="player-score"></span></p>
+            <p>Computer's Score: <span id="computer-score"></span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
